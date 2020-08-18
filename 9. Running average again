@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+	int a[100001];
+	long int n,i;
+	long double b,c;
+	b=0;
+	scanf("%ld",&n);
+	for(i=1;i<=n;i++)
+	{
+		scanf("%d ",&a[i]);
+		b = b+a[i];
+		c = (b/i);
+		printf("%llf\n",c);
+	}
+	
+	return 0;
+}
