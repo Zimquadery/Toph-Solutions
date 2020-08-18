@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+	int n,i,a[101];
+	double b,c;
+	b=0;
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		scanf("%d ",&a[i]);
+		b = b+a[i];
+		c = (b/i);
+		printf("%lf\n",c);
+	}
+	
+	return 0;
+}
