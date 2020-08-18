@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+	int n,d,m,i;
+	scanf("%d %d",&n,&d);
+	m=n/d;
+	i=n%d;
+	printf("%d %d %d\n",m,i,d);
+	
+	return 0;
+}
