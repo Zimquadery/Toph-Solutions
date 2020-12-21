@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char s[101];
+    scanf("%s",&s);
+    int len=strlen(s),i,j=0;
+    for(i=0;i<=(len-1)/2;i++)
+    {
+        if(s[i]!=s[len-1-i])
+		{
+        j=1;
+        break;
+		}
+    }
+    if(j!=1)
+    {
+        printf("Yes\n");
+    }
+    else printf("No\n");
+
+}
