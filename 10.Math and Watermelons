@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+	long long int m,k;
+	scanf("%lld %lld",&m,&k);
+	printf("%lld",m%k);
+	
+	return 0;
+}
