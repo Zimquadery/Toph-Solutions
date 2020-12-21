@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char a[20];
+    scanf("%s",&a);
+    int l=strlen(a),i,temp,p=0;
+    temp=l%3;
+    for(i=0;i<temp;i++)
+    printf("%c",a[i]);
+    if(temp!=0&&l>2)
+    printf(",");
+    for(i=temp;i<l;i++){
+        printf("%c",a[i]);
+        p++;
+        if(p%3==0&&i!=l-1)
+        printf(",");
+    }
+    printf("\n");
+    return 0;
+}
